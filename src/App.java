@@ -34,5 +34,15 @@ public class App {
          * The last four operations won't be called when stack is empty.
          * 
          */
+        MaxStack stack = new MaxStack();
+        stack.push(5);
+        stack.push(1);
+        stack.push(5);
+        System.out.println("The current top value should be 5: " + stack.top()); // stack.top(); -> 5
+        System.out.println("The current top max value should be 5: " + stack.popMax()); // stack.popMax(); -> 5
+        System.out.println("The current top value should be 1: " + stack.top()); // stack.top(); -> 1
+        System.out.println("The current peek max value should be 5: " + stack.peekMax()); // stack.peekMax(); -> 5
+        System.out.println("The current pop value should be 1: " + stack.pop()); // stack.pop(); -> 1
+        System.out.println("The current top value should be 5: " + stack.top());// stack.top(); -> 5
     }
 }
